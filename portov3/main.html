@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio - Theophilus Conary Chang</title>
+
+  <!-- link ke css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">Portofolio — Theophilus Conary Chang</div>
+        <div class="nav-links">
+          <a href="#home" data-target="home" class="nav-link active">Home</a>
+          <a href="#modules" data-target="modules" class="nav-link">Module Mingguan</a>
+          <a href="#showcase" data-target="showcase" class="nav-link">Showcase Karya</a>
+          <a href="#reflection" data-target="reflection" class="nav-link">Refleksi Akhir</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- porto-->
+  <main class="container">
+
+    <!-- home paeg-->
+    <section id="home" class="page card">
+      <div class="hero">
+        <div class="banner">
+          <img src="./aset/MukaGweh.png" alt="Profile Image">
+        </div>
+
+        <div class="intro">
+          <h1>Halo, saya Theophilus Conary Chang</h1>
+          <p class="subtitle">
+            Mahasiswa di Matana University
+          </p>
+          <p class="subtitle">
+            program studi informatika
+          </p>
+          <p class="subtitle">
+            angkatan 2025
+          </p>
+
+          <div class="course-intro">
+            <h3>Intro Mata Kuliah</h3>
+            <p>desc singkat matkul pkn</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- mingguan -->
+    <section id="modules" class="page" hidden>
+      <div class="card">
+        <h2>Module Mingguan</h2>
+        <p class="meta">Berisi ringkasan, pertanyaan inti, bukti pembelajaran, dan refleksi.</p>
+
+        <div style="display:flex;flex-direction:column;gap:18px;margin-top:18px">
+          <!--minggu 1-->
+          <!--copy replicate-->
+          <article class="minggu card" style="padding:18px;display:flex;gap:16px">
+            <div class="thumb">
+              minggu 1
+            </div>
+
+            <div class="minggu-content">
+              <h4>Pengenalan Konsep</h4>
+              <div class="meta">Pertanyaan inti: Apa yang dimaksud dengan ...?</div>
+
+              <div class="module-buttons" >
+                <button class="btn-blue" onclick="openEvidence('evidence1')">Lihat Bukti</button>
+                <button class="btn-green" onclick="toggleRef('ref1')">Tampilkan Refleksi</button>
+                <button class="btn-yellow" onclick="toggleRef('rangkuman1')">Tampilkan Rangkuman</button>
+              </div>
+
+              <div id="ref1" class="reflection hidden spaced">
+                <strong>Refleksi Mingguan:</strong>
+                <p>Catatan pribadi tentang pembelajaran minggu ini.</p>
+              </div>
+
+              <div id="rangkuman1" class="reflection hidden spaced">
+                <strong>Rangkuman Materi:</strong>
+                <p>Ringkasan materi pertemuan minggu tersebut.</p>
+              </div>
+
+              <div id="evidence1" class="hidden">
+                <h3>Bukti Pembelajaran — Minggu 1</h3>
+                <p>Deskripsi bukti pembelajaran.</p>
+                <img src="./aset/MukaGweh.png" alt="Bukti Minggu 1" class="evidence-image">
+              </div>
+            </div>
+          </article>
+          <!--copy replicate-->
+          
+          <p>tba</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- karya -->
+    <section id="showcase" class="page" hidden>
+      <div class="card">
+        <h2>Showcase Karya</h2>
+
+        <div class="showcase-grid">
+
+          <!-- Podcast -->
+          <div class="media">
+            <h3>Podcast</h3>
+            <p class="meta">YouTube embed:</p>
+            <iframe src="https://youtu.be/Ck40TqDBscE?si=E1rJ3wUh2jrX0Pi3" allowfullscreen></iframe>
+            <p><a href="https://youtu.be/Ck40TqDBscE?si=E1rJ3wUh2jrX0Pi3" target="_blank">Buka di YouTube</a></p>
+
+            <h4>Keterangan Teknis</h4>
+            <p>Penjelasan produksi dan tools editing.</p>
+
+            <h4>Anggota Kelompok</h4>
+            <ul>
+              <li>1. Aulius Maxime Agung Kusuma Wijaya (20256120020)</li>
+              <li>2. Jonathan Immanuel Iskandar (20255520006)</li>
+              <li>3. Theophilus Conary Chang (20255520017)</li>
+              <li>4. Christian Mulyawan Wijaya (20255520008)</li>
+              <li>5. Candra Winata (20255520007)</li>
+              <li>6. Markwell Giral Airlangga (20255520010)</li>
+            </ul>
+          </div>
+
+          <!--artikel ilmiah -->
+          <div class="media">
+            <h3>Artikel Ilmiah</h3>
+            <p class="meta">Download PDF:</p>
+            <p><a href="./assets/Artikel-Ilmiah.pdf" download>Download Artikel</a></p>
+
+            <h4>Keterangan Teknis</h4>
+            <p>Metodologi dan rujukan utama penelitian.</p>
+
+            <h4>Anggota Kelompok</h4>
+            <ul>
+              <li>1. Aulius Maxime Agung Kusuma Wijaya (20256120020)</li>
+              <li>2. Jonathan Immanuel Iskandar (20255520006)</li>
+              <li>3. Theophilus Conary Chang (20255520017)</li>
+              <li>4. Christian Mulyawan Wijaya (20255520008)</li>
+              <li>5. Candra Winata (20255520007)</li>
+              <li>6. Markwell Giral Airlangga (20255520010)</li>
+            </ul>
+          </div>
+
+          <!-- infografis-->
+          <div class="media">
+            <h3>Infografis</h3>
+            <p class="meta">Klik untuk memperbesar.</p>
+
+            <div class="infographics" >
+              <img src="./aset/Infografis.png"
+                alt="Infografis">
+            </div>
+
+            <h4>Keterangan Teknis</h4>
+            <p>Proses pembuatan dan sumber data infografis.</p>
+
+            <h4>Anggota Kelompok</h4>
+            <ul>
+              <li>1. Aulius Maxime Agung Kusuma Wijaya (20256120020)</li>
+              <li>2. Jonathan Immanuel Iskandar (20255520006)</li>
+              <li>3. Theophilus Conary Chang (20255520017)</li>
+              <li>4. Christian Mulyawan Wijaya (20255520008)</li>
+              <li>5. Candra Winata (20255520007)</li>
+              <li>6. Markwell Giral Airlangga (20255520010)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- refleksi final -->
+    <section id="reflection" class="page" hidden>
+      <div class="card reflection">
+        <h2>Refleksi Akhir</h2>
+
+        <h4>Evaluasi Pengetahuan Kewarganegaraan</h4>
+        <p>Ringkasan hasil pembelajaran.</p>
+
+        <h4>Pembaruan Sikap dan Pengetahuan</h4>
+        <p>Perubahan sikap dan rencana tindakan.</p>
+
+        <h4>Rencana Pengembangan</h4>
+        <p>Langkah konkret pengembangan lebih lanjut.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- gambar-->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <strong id="modal-title">Gambar</strong>
+        <button id="modal-close" class="close-btn">✕</button>
+      </div>
+      <img id="modal-img" src="" alt="Gambar diperbesar" />
+    </div>
+  </div>
+
+  <script>
+    /* navigation di header*/
+    const navLinks = document.querySelectorAll('.nav-link');
+    const pages = document.querySelectorAll('.page');
+
+    function showPage(id) {
+      pages.forEach(page => page.hidden = (page.id !== id));
+      navLinks.forEach(link => link.classList.toggle('active', link.dataset.target === id));
+      history.replaceState(null, '', '#' + id);
+    }
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        showPage(link.dataset.target);
+      });
+    });
+
+    window.addEventListener('load', () => {
+      showPage(location.hash.replace('#','') || 'home');
+      document.getElementById('year').textContent = new Date().getFullYear();
+    });
+
+    /*CUSTOM EVIDENCE MODAL */
+    function openEvidence(id) {
+      const content = document.getElementById(id);
+      if (!content) return;
+
+      const modal = document.createElement("div");
+      modal.className = "modal-overlay";
+
+      modal.innerHTML = `
+        <div class="modal-box">
+          <button class="close-btn" onclick="this.closest('.modal-overlay').remove()">X</button>
+          ${content.innerHTML}
+        </div>
+      `;
+
+      document.body.appendChild(modal);
+    }
+
+    /* TOGGLE REFLEKSI & RANGKUMAN*/
+    function toggleRef(id) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      el.style.display = (el.style.display === "block") ? "none" : "block";
+    }
+
+    /*IMAGE MODAL VIEWER */
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modal-img');
+    const modalTitle = document.getElementById('modal-title');
+
+    function openModal(src, alt) {
+      modalImg.src = src;
+      modalTitle.textContent = alt || "Gambar";
+      modal.classList.add('show');
+      modal.setAttribute('aria-hidden', 'false');
+    }
+
+    function closeModal() {
+      modal.classList.remove('show');
+      modal.setAttribute('aria-hidden', 'true');
+      modalImg.src = "";
+    }
+
+    document.getElementById('modal-close').addEventListener('click', closeModal);
+    modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+    window.addEventListener('keydown', e => { if (e.key === "Escape") closeModal(); });
+
+    document.addEventListener('click', e => {
+      if (e.target.tagName === 'IMG' && e.target.dataset.full) {
+        openModal(e.target.dataset.full, e.target.alt);
+      }
+    });
+  </script>
+</body>
+</html>
