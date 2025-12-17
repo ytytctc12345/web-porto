@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio Theophilus Conary Chang</title>
+
+  <!-- link ke css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">Portofolio Theophilus Conary Chang</div>
+        <div class="nav-links">
+          <a href="#home" data-target="home" class="nav-link active">Home</a>
+          <a href="#modules" data-target="modules" class="nav-link">Module Mingguan</a>
+          <a href="#showcase" data-target="showcase" class="nav-link">Showcase Karya</a>
+          <a href="#reflection" data-target="reflection" class="nav-link">Refleksi Akhir</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- porto-->
+  <main class="container">
+
+    <!-- home paeg-->
+    <section id="home" class="page card">
+      <div class="hero">
+        <div class="banner">
+          <img src="./aset/MukaGweh.png" alt="Profile Image">
+        </div>
+
+        <div class="intro">
+          <h1>Halo, saya Theophilus Conary Chang</h1>
+          <p class="subtitle">
+            seorang mahasiswa yang menjalankan pendidikan di Matana University, pada program studi informatika angkatan 2025
+          </p>
+
+          <div class="course-intro">
+            <h3>Intro Mata Kuliah</h3>
+            <p>mata kuliah yang bertujuan membentuk mahasiswa menjadi warga negara yang sadar hak dan kewajibannya. Mata kuliah ini membahas nilai-nilai Pancasila, konstitusi, demokrasi, serta wawasan kebangsaan dalam kehidupan bermasyarakat, berbangsa, dan bernegara. Melalui PKn, mahasiswa diharapkan mampu berpikir kritis, beretika, dan bertanggung jawab dalam menghadapi tantangan sosial dan kebangsaan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- mingguan -->
+    <section id="modules" class="page" hidden>
+      <div class="card">
+        <h2>Module Mingguan</h2>
+        <p class="meta">Berisi ringkasan, pertanyaan inti, bukti pembelajaran, dan refleksi.</p>
+
+        <div style="display:grid;grid-template-columns: repeat(2, 1fr);;gap:18px;margin-top:18px;">
+          <!--minggu 1-->
+          <!--copy replicate-->
+          <article class="minggu card" style="padding:18px;display:flex;gap:16px;">
+            <div class="thumb">
+              minggu 1
+            </div>
+
+            <div class="minggu-content">
+              <h4>Pengenalan Konsep</h4>
+              <div class="meta">Pertanyaan inti: Bagaimana Pendidikan Kewarganegaraan berperan dalam membentuk warga negara yang kritis, beretika, dan mampu menyelesaikan persoalan kebangsaan berdasarkan nilai Pancasila?</div>
+
+              <div class="module-buttons" >
+                <button class="btn-blue" onclick="openEvidence('evidence1')">Lihat Bukti</button>
+                <button class="btn-green" onclick="toggleshowtxt('rangkuman1')">Tampilkan Rangkuman</button>
+              </div>
+              
+              <div id="rangkuman1" class="hidden">
+                <strong>Rangkuman Materi:</strong>
+                <p>Pendidikan Kewarganegaraan merupakan upaya sadar negara untuk membentuk warga negara yang berpengetahuan, beretika, dan bertanggung jawab. Mata kuliah ini menekankan relasi warga negara dengan negara, nilai-nilai kebangsaan, serta pengembangan sikap kritis melalui metode problem solving. Pancasila dipahami sebagai hasil kristalisasi nilai sejarah bangsa, bukan ciptaan individu.</p>
+              </div>
+
+              <div id="evidence1" class="hidden">
+                <h3>Bukti Pembelajaran — Minggu 1</h3>
+                <p>Deskripsi bukti pembelajaran.</p>
+                <img src="./aset/pertemuan 1.jpg" alt="Bukti Minggu 1" class="evidence-image">
+              </div>
+            </div>
+          </article>
+          <!--copy replicate-->
+          
+          <article class="minggu card" style="padding:18px;display:flex;gap:16px">
+            <div class="thumb">
+              minggu 2
+            </div>
+
+            <div class="minggu-content">
+              <h4>Sejarah Identitas Nasional</h4>
+              <div class="meta">Pertanyaan inti: Mengapa identitas nasional Indonesia dikatakan sebagai hasil kesadaran historis dan etis, serta bagaimana identitas tersebut menjaga persatuan dalam masyarakat yang multikultural?</div>
+
+              <div class="module-buttons" >
+                <button class="btn-blue" onclick="openEvidence('evidence2')">Lihat Bukti</button>
+                <button class="btn-green" onclick="toggleshowtxt('rangkuman2')">Tampilkan Rangkuman</button>
+              </div>
+              
+              <div id="rangkuman2" class="hidden">
+                <strong>Rangkuman Materi:</strong>
+                <p>Identitas nasional Indonesia terbentuk melalui proses historis panjang yang dipengaruhi pengalaman penjajahan, kesamaan nasib, dan kehendak hidup bersama. Nasionalisme Indonesia bersifat etis dan inklusif, bukan berbasis etnis atau agama. Pemikiran tokoh serta teori bangsa (Renan dan Anderson) menegaskan bahwa bangsa lahir dari kesadaran, imajinasi, dan tekad kolektif.</p>
+              </div>
+
+              <div id="evidence2" class="hidden">
+                <h3>Bukti Pembelajaran — Minggu 2</h3>
+                <p>Deskripsi bukti pembelajaran.</p>
+                <img src="./aset/pertemuan 2.jpg" alt="Bukti Minggu 2" class="evidence-image">
+              </div>
+            </div>
+          </article>
+          
+          <article class="minggu card" style="padding:18px;display:flex;gap:16px">
+            <div class="thumb">
+              minggu 3
+            </div>
+
+            <div class="minggu-content">
+              <h4>Rakyat, Hukum, dan Negara (Relasi Kekuasaan)</h4>
+              <div class="meta">Pertanyaan inti: Bagaimana kontrak sosial menjelaskan legitimasi kekuasaan negara serta hak dan kewajiban timbal balik antara rakyat, hukum, dan negara?</div>
+
+              <div class="module-buttons" >
+                <button class="btn-blue" onclick="openEvidence('evidence3')">Lihat Bukti</button>
+                <button class="btn-green" onclick="toggleshowtxt('rangkuman3')">Tampilkan Rangkuman</button>
+              </div>
+              
+              <div id="rangkuman3" class="hidden">
+                <strong>Rangkuman Materi:</strong>
+                <p>Relasi negara, hukum, dan rakyat dijelaskan melalui teori kontrak sosial yang menempatkan rakyat sebagai sumber legitimasi kekuasaan. Negara dibentuk untuk melindungi hak dan menciptakan ketertiban melalui hukum. Legitimasi negara dapat bersumber dari rakyat, ideologi, elite, atau agama, namun legitimasi demokratis menjadi dasar utama negara modern.</p>
+              </div>
+
+              <div id="evidence3" class="hidden">
+                <h3>Bukti Pembelajaran — Minggu 3</h3>
+                <p>Deskripsi bukti pembelajaran.</p>
+                <img src="./aset/pertemuan 3.jpg" alt="Bukti Minggu 3" class="evidence-image">
+              </div>
+            </div>
+          </article>
+
+          <article class="minggu card" style="padding:18px;display:flex;gap:16px">
+            <div class="thumb">
+              minggu 4
+            </div>
+
+            <div class="minggu-content">
+              <h4>Ideologi dan Falsafah Bangsa</h4>
+              <div class="meta">Pertanyaan inti: Mengapa Pancasila disebut sebagai ideologi terbuka dan pandangan hidup bangsa, serta bagaimana posisinya membedakan Indonesia dari negara dengan ideologi tertutup?</div>
+
+              <div class="module-buttons" >
+                <button class="btn-blue" onclick="openEvidence('evidence4')">Lihat Bukti</button>
+                <button class="btn-green" onclick="toggleshowtxt('rangkuman4')">Tampilkan Rangkuman</button>
+              </div>
+              
+              <div id="rangkuman4" class="hidden">
+                <strong>Rangkuman Materi:</strong>
+                <p>Ideologi merupakan sistem gagasan yang menjadi pedoman berpikir dan bertindak dalam kehidupan berbangsa dan bernegara. Ideologi dapat bersifat terbuka atau tertutup. Pancasila sebagai ideologi terbuka dan pandangan hidup bangsa bersumber dari nilai budaya Indonesia dan berfungsi sebagai dasar negara, pandangan hidup, serta identitas bangsa.</p>
+              </div>
+
+              <div id="evidence4" class="hidden">
+                <h3>Bukti Pembelajaran — Minggu 4</h3>
+                <p>Deskripsi bukti pembelajaran.</p>
+                <img src="./aset/pertemuan 4.jpg" alt="Bukti Minggu 4" class="evidence-image">
+              </div>
+            </div>
+          </article>
+
+          <article class="minggu card" style="padding:18px;display:flex;gap:16px">
+            <div class="thumb">
+              minggu 5
+            </div>
+
+            <div class="minggu-content">
+              <h4>Konstitusi</h4>
+              <div class="meta">Pertanyaan inti: Bagaimana konstitusi berfungsi sebagai landasan hukum, demokrasi, dan pembatas kekuasaan dalam menjamin kedaulatan rakyat dan keadilan negara?</div>
+
+              <div class="module-buttons" >
+                <button class="btn-blue" onclick="openEvidence('evidence5')">Lihat Bukti</button>
+                <button class="btn-green" onclick="toggleshowtxt('rangkuman5')">Tampilkan Rangkuman</button>
+              </div>
+              
+              <div id="rangkuman5" class="hidden">
+                <strong>Rangkuman Materi:</strong>
+                <p>Konstitusi merupakan norma dasar yang mengatur struktur negara, pembagian kekuasaan, dan jaminan HAM. Konstitusi menjadi sumber hukum tertinggi dan dasar demokratisasi negara. UUD 1945 mengalami dinamika dan amandemen untuk menjaga keseimbangan kekuasaan, supremasi hukum, serta legitimasi rakyat</p>
+              </div>
+
+              <div id="evidence5" class="hidden">
+                <h3>Bukti Pembelajaran — Minggu 5</h3>
+                <p>Deskripsi bukti pembelajaran.</p>
+                <img src="./aset/pertemuan 5.jpg" alt="Bukti Minggu 5" class="evidence-image">
+              </div>
+            </div>
+          </article>
+
+          <article class="minggu card" style="padding:18px;display:flex;gap:16px">
+            <div class="thumb">
+              minggu 6
+            </div>
+
+            <div class="minggu-content">
+              <h4>Fungsi dan Peran Negara</h4>
+              <div class="meta">Pertanyaan inti: Bagaimana fungsi negara diwujudkan melalui kebijakan publik yang etis, demokratis, dan berorientasi pada kesejahteraan umum?</div>
+
+              <div class="module-buttons" >
+                <button class="btn-blue" onclick="openEvidence('evidence6')">Lihat Bukti</button>
+                <button class="btn-green" onclick="toggleshowtxt('rangkuman6')">Tampilkan Rangkuman</button>
+              </div>
+              
+              <div id="rangkuman6" class="hidden">
+                <strong>Rangkuman Materi:</strong>
+                <p>Negara memiliki fungsi reguler (politik, yuridis, diplomatik, administrasi, pembangunan) yang diwujudkan melalui kebijakan publik. Kebijakan publik harus memiliki legitimasi politik dan landasan etis, serta dijalankan berdasarkan prinsip good governance: transparansi, akuntabilitas, partisipasi, supremasi hukum, efisiensi, dan keadilan.</p>
+              </div>
+
+              <div id="evidence6" class="hidden">
+                <h3>Bukti Pembelajaran — Minggu 6</h3>
+                <p>Deskripsi bukti pembelajaran.</p>
+                <img src="./aset/pertemuan 6.jpg" alt="Bukti Minggu 6" class="evidence-image">
+              </div>
+            </div>
+          </article>
+
+          <article class="minggu card" style="padding:18px;display:flex;gap:16px">
+            <div class="thumb">
+              minggu 9
+            </div>
+
+            <div class="minggu-content">
+              <h4>Demokrasi</h4>
+              <div class="meta">Pertanyaan inti: Bagaimana demokrasi Pancasila mengintegrasikan kedaulatan rakyat, musyawarah, dan negara hukum dalam sistem politik Indonesia?</div>
+
+              <div class="module-buttons" >
+                <button class="btn-blue" onclick="openEvidence('evidence9')">Lihat Bukti</button>
+                <button class="btn-green" onclick="toggleshowtxt('rangkuman9')">Tampilkan Rangkuman</button>
+              </div>
+              
+              <div id="rangkuman9" class="hidden">
+                <strong>Rangkuman Materi:</strong>
+                <p>Demokrasi dipahami sebagai bentuk pemerintahan, sistem politik, dan nilai. Demokrasi Indonesia berlandaskan Pancasila dengan prinsip musyawarah, perwakilan, dan pembagian kekuasaan. Demokrasi bertujuan mewujudkan keadilan, kesejahteraan, serta perlindungan hak asasi manusia dalam kerangka negara hukum.</p>
+              </div>
+
+              <div id="evidence9" class="hidden">
+                <h3>Bukti Pembelajaran — Minggu 9</h3>
+                <p>Deskripsi bukti pembelajaran.</p>
+                <img src="./aset/pertemuan 9.jpg" alt="Bukti Minggu 9" class="evidence-image">
+              </div>
+            </div>
+          </article>
+
+          <article class="minggu card" style="padding:18px;display:flex;gap:16px">
+            <div class="thumb">
+              minggu 11
+            </div>
+
+            <div class="minggu-content">
+              <h4>Multikulturalisme</h4>
+              <div class="meta">Pertanyaan inti: Bagaimana multikulturalisme dapat memperkuat persatuan nasional Indonesia tanpa menghilangkan identitas dan hak kelompok yang beragam?</div>
+
+              <div class="module-buttons" >
+                <button class="btn-blue" onclick="openEvidence('evidence11')">Lihat Bukti</button>
+                <button class="btn-green" onclick="toggleshowtxt('rangkuman11')">Tampilkan Rangkuman</button>
+              </div>
+              
+              <div id="rangkuman11" class="hidden">
+                <strong>Rangkuman Materi:</strong>
+                <p>Multikulturalisme menekankan pengakuan, penghormatan, dan kesetaraan dalam keberagaman budaya, etnis, agama, dan identitas sosial. Dalam konteks Indonesia, multikulturalisme menjadi fondasi persatuan nasional yang selaras dengan nilai Pancasila dan prinsip Bhinneka Tunggal Ika.</p>
+              </div>
+
+              <div id="evidence11" class="hidden">
+                <h3>Bukti Pembelajaran — Minggu 11</h3>
+                <p>Deskripsi bukti pembelajaran.</p>
+                <img src="./aset/pertemuan 11.jpg" alt="Bukti Minggu 11" class="evidence-image">
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- karya -->
+    <section id="showcase" class="page" hidden>
+      <div class="card">
+        <h2>Showcase Karya</h2>
+
+        <div class="showcase-grid">
+
+          <!-- Podcast -->
+          <div class="card">
+            <div class="media">
+              <h3>Podcast</h3>
+              <p class="meta">YouTube embed:</p>
+              <iframe width="500" height="300" src="https://www.youtube.com/embed/Ck40TqDBscE?si=HnpiunSH3THeqHkN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <p><a href="https://youtu.be/Ck40TqDBscE?si=E1rJ3wUh2jrX0Pi3" target="_blank">Buka di YouTube</a></p>
+
+              <h4>Keterangan Teknis</h4>
+              <p>Podcast merupakan media audio digital yang menyajikan informasi, diskusi, atau narasi secara verbal dan dapat diakses secara daring melalui platform streaming. Produksi podcast melibatkan proses perencanaan konten, perekaman suara, penyuntingan audio, dan distribusi digital. Podcast dirancang untuk konsumsi berulang, bersifat fleksibel, dan memungkinkan penyampaian informasi secara lebih naratif serta komunikatif kepada audiens.</p>
+
+              <h4>Anggota Kelompok</h4>
+              <ul>
+                <li>1. Aulius Maxime Agung Kusuma Wijaya (20256120020)</li>
+                <li>2. Jonathan Immanuel Iskandar (20255520006)</li>
+                <li>3. Theophilus Conary Chang (20255520017)</li>
+                <li>4. Christian Mulyawan Wijaya (20255520008)</li>
+                <li>5. Candra Winata (20255520007)</li>
+                <li>6. Markwell Giral Airlangga (20255520010)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <!--artikel ilmiah -->
+            <div class="media">
+              <h3>Artikel Ilmiah</h3>
+              <p class="meta">Download PDF:</p>
+              <p><a href="./assets/Artikel-Ilmiah.pdf" download>Download Artikel</a></p>
+
+              <h4>Keterangan Teknis</h4>
+              <p>Artikel ilmiah adalah karya tulis akademik yang menyajikan hasil penelitian atau kajian teoritis secara sistematis, objektif, dan berbasis metodologi ilmiah. Artikel ini disusun dengan struktur baku yang umumnya mencakup abstrak, pendahuluan, metodologi, hasil dan pembahasan, serta kesimpulan dan daftar pustaka. Bahasa yang digunakan bersifat formal, lugas, dan mengikuti kaidah penulisan ilmiah serta standar sitasi yang berlaku.</p>
+
+              <h4>Anggota Kelompok</h4>
+              <ul>
+                <li>1. Aulius Maxime Agung Kusuma Wijaya (20256120020)</li>
+                <li>2. Jonathan Immanuel Iskandar (20255520006)</li>
+                <li>3. Theophilus Conary Chang (20255520017)</li>
+                <li>4. Christian Mulyawan Wijaya (20255520008)</li>
+                <li>5. Candra Winata (20255520007)</li>
+                <li>6. Markwell Giral Airlangga (20255520010)</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="card">
+
+            <!-- infografis-->
+            <div class="media">
+              <h3>Infografis</h3>
+              <div class="module-buttons" >
+                <button class="btn-blue" onclick="openEvidence('infografis')">Lihat infografis</button>
+              </div>
+              <div id="infografis" class="hidden">
+                <p>infografis</p>
+                <img src="./aset/Infografis.png" alt="Bukti Minggu 2" class="evidence-image">
+              </div>
+
+              <h4>Keterangan Teknis</h4>
+              <p>Infografis merupakan media visual yang menyajikan data, informasi, atau konsep secara ringkas melalui kombinasi elemen grafis, teks singkat, ikon, dan visualisasi data. Infografis dirancang dengan prinsip keterbacaan, hierarki visual, dan konsistensi warna untuk memudahkan audiens memahami informasi kompleks dalam waktu singkat. Format infografis dapat berupa statis atau digital, disesuaikan dengan platform distribusi seperti media sosial, presentasi, atau publikasi daring.</p>
+
+              <h4>Anggota Kelompok</h4>
+              <ul>
+                <li>1. Aulius Maxime Agung Kusuma Wijaya (20256120020)</li>
+                <li>2. Jonathan Immanuel Iskandar (20255520006)</li>
+                <li>3. Theophilus Conary Chang (20255520017)</li>
+                <li>4. Christian Mulyawan Wijaya (20255520008)</li>
+                <li>5. Candra Winata (20255520007)</li>
+                <li>6. Markwell Giral Airlangga (20255520010)</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- refleksi final -->
+    <section id="reflection" class="page" hidden>
+      <div class="card reflection" style="display:grid; gap:5px;">
+        <h2>Refleksi Akhir</h2>
+
+        <div class="card">
+          <h4>Evaluasi Pengetahuan Kewarganegaraan</h4>
+          <p>
+            Melalui rangkaian materi Pendidikan Kewarganegaraan, pemahaman saya mengenai negara mengalami pendalaman yang signifikan. Negara tidak lagi dipahami semata-mata sebagai entitas kekuasaan atau institusi administratif, melainkan sebagai hasil kesepakatan rasional rakyat (kontrak sosial) yang bertujuan mewujudkan ketertiban, keadilan, dan kesejahteraan bersama. Relasi antara rakyat, hukum, dan negara menjadi lebih jelas, terutama bahwa kedaulatan sejatinya berada di tangan rakyat dan dijalankan melalui mekanisme hukum dan konstitusi.
+          </p>
+
+          <p>
+            Saya juga memahami bahwa ideologi, khususnya Pancasila, bukan hanya simbol normatif, tetapi merupakan pandangan hidup, dasar negara, dan ideologi terbuka yang bersumber dari nilai budaya bangsa. Konstitusi dipahami sebagai norma dasar yang membatasi kekuasaan, menjamin hak asasi manusia, dan menjadi fondasi demokrasi. Selain itu, demokrasi Indonesia memiliki kekhasan tersendiri melalui prinsip musyawarah, perwakilan, dan pembagian kekuasaan yang tidak kaku, namun tetap menjunjung prinsip check and balance.
+          </p>
+        </div>
+
+        <div class="card">
+          <h4>Pembaruan Sikap dan Pengetahuan</h4>
+          <p>
+            Pembelajaran ini tidak hanya memperkaya aspek kognitif, tetapi juga mendorong pembaruan sikap sebagai warga negara. Saya menyadari bahwa menjadi warga negara tidak cukup hanya taat hukum, tetapi juga dituntut memiliki kesadaran etis, sikap kritis, dan tanggung jawab moral terhadap kehidupan publik. Prinsip-prinsip demokrasi, supremasi hukum, transparansi, dan keadilan sosial menuntut keterlibatan aktif warga negara dalam mengawasi dan menilai kebijakan publik.
+          </p>
+          <p>
+            Pemahaman mengenai multikulturalisme dan identitas nasional memperbarui cara pandang saya terhadap keberagaman. Perbedaan suku, agama, budaya, dan pandangan politik tidak seharusnya menjadi sumber konflik, melainkan modal sosial untuk memperkuat persatuan bangsa. Nilai Bhinneka Tunggal Ika dan Pancasila mengajarkan bahwa persatuan Indonesia dibangun di atas kesediaan hidup bersama, bukan penyeragaman identitas.
+          </p>
+        </div>
+
+        <div class="card">
+          <h4>Rencana Pengembangan</h4>
+          <p>
+            Sebagai tindak lanjut dari pembelajaran ini, saya merencanakan beberapa langkah pengembangan diri sebagai warga negara yang bertanggung jawab. saya akan terus mengembangkan literasi kewarganegaraan dengan mengikuti isu-isu kebijakan publik, konstitusi, dan dinamika demokrasi, baik melalui media akademik maupun diskursus publik yang kredibel.
+          </p>
+        </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- gambar-->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+        <strong id="modal-title">Gambar</strong>
+        <button id="modal-close" class="close-btn">✕</button>
+      </div>
+      <img id="modal-img" src="" alt="Gambar diperbesar" />
+    </div>
+  </div>
+
+  <script>
+    /* navigation di header*/
+    const navLinks = document.querySelectorAll('.nav-link');
+    const pages = document.querySelectorAll('.page');
+
+    function showPage(id) {
+      pages.forEach(page => page.hidden = (page.id !== id));
+      navLinks.forEach(link => link.classList.toggle('active', link.dataset.target === id));
+      history.replaceState(null, '', '#' + id);
+    }
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        showPage(link.dataset.target);
+      });
+    });
+
+    window.addEventListener('load', () => {
+      showPage(location.hash.replace('#','') || 'home');
+      document.getElementById('year').textContent = new Date().getFullYear();
+    });
+
+    /*CUSTOM EVIDENCE MODAL */
+    function openEvidence(id) {
+      const content = document.getElementById(id);
+      if (!content) return;
+
+      const modal = document.createElement("div");
+      modal.className = "modal-overlay";
+
+      modal.innerHTML = `
+        <div class="modal-box">
+          <button class="close-btn" onclick="this.closest('.modal-overlay').remove()">X</button>
+          ${content.innerHTML}
+        </div>
+      `;
+
+      document.body.appendChild(modal);
+    }
+
+    /* TOGGLE RANGKUMAN*/
+    function toggleshowtxt(id) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      el.style.display = (el.style.display === "block") ? "none" : "block";
+    }
+
+    /*IMAGE MODAL VIEWER */
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modal-img');
+    const modalTitle = document.getElementById('modal-title');
+
+    function openModal(src, alt) {
+      modalImg.src = src;
+      modalTitle.textContent = alt || "Gambar";
+      modal.classList.add('show');
+      modal.setAttribute('aria-hidden', 'false');
+    }
+
+    function closeModal() {
+      modal.classList.remove('show');
+      modal.setAttribute('aria-hidden', 'true');
+      modalImg.src = "";
+    }
+
+    document.getElementById('modal-close').addEventListener('click', closeModal);
+    modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+    window.addEventListener('keydown', e => { if (e.key === "Escape") closeModal(); });
+
+    document.addEventListener('click', e => {
+      if (e.target.tagName === 'IMG' && e.target.dataset.full) {
+        openModal(e.target.dataset.full, e.target.alt);
+      }
+    });
+  </script>
+</body>
+</html>
